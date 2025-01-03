@@ -15,7 +15,7 @@ import { TableCell, TableRow } from "@/components/ui/table";
 import { ITask } from "@/types/tasks";
 import { BiSolidEdit } from "react-icons/bi";
 import { BiTrash } from "react-icons/bi";
-import React, { useState } from "react";
+import React, { useState, FormEventHandler } from "react";
 import { useRouter } from "next/navigation";
 import { deleteTodo, editTodo } from "@/api";
 
