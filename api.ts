@@ -1,6 +1,7 @@
 import { ITask } from "./types/tasks";
 
-const baseUrl = "http://localhost:3001";
+// const baseUrl = "http://localhost:3001";
+const baseUrl = "https://todolist-with-nextjs.onrender.com";
 
 export const getAllTodos = async (): Promise<ITask[]> => {
   const res = await fetch(`${baseUrl}/tasks`, { cache: "no-store" });
